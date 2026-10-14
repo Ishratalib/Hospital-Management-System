@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hospital Management System
+
+A full-stack Hospital Management System designed to simplify hospital operations and manage healthcare-related information through a web-based application. The project uses Next.js for the frontend and Supabase for backend services and database management.
+
+## Live Demo
+
+**Frontend:** [Hospital Management System](https://hospital-management-system-d2td.vercel.app/)
+
+**Backend & Database:** Hosted on Supabase.
+
+## Technologies Used
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS (if used in the project)
+
+### Backend & Database
+
+- Supabase
+- PostgreSQL
+- Supabase Authentication (if enabled)
+- Row Level Security (RLS)
+
+## Features
+
+- User authentication and login
+- Three user profiles: Admin, Doctor, and Patient
+- Role-based access control for each user profile
+- **Admin:** Manages hospital operations and oversees system activities.
+- **Doctor:** Accesses doctor-related features and manages assigned responsibilities.
+- **Patient:** Accesses patient-related features and views relevant information.
+- Hospital dashboard management
+- Patient information management
+- Doctor management
+- Billing and invoice management
+- Payment records management
+- Supabase database integration
+- Responsive user interface
+
+## Project Architecture
+
+- **Frontend:** Next.js, deployed on Vercel.
+- **Backend:** Supabase backend services.
+- **Database:** PostgreSQL hosted on Supabase.
+- **Authentication:** Supabase Authentication, if configured.
+
+## Testing Credentials
+
+Use the following accounts to explore the application.
+
+### Admin
+
+- **Email:** `admin@hms.com`
+- **Password:** `Password123!`
+
+### Doctor
+
+- **Email:** `aqsatariq@gmail.com`
+- **Password:** `Password123!`
+
+### Patient
+
+- **Email:** `fatima@gmail.com`
+- **Password:** `Password123!`
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js
+- npm
+- Git
+- A Supabase project
+
+### Installation
+
+#### 1. Clone the Repository
+
+Replace the placeholder with your actual frontend repository URL.
+
+```bash
+git clone <your-frontend-repository-url>
+```
+
+#### 2. Navigate to the Project Directory
+
+```bash
+cd Hospital-Management-System
+```
+
+#### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+#### 4. Configure Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+#### 5. Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 6. Open the Application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+http://localhost:3000
+```
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+| Variable | Description |
+|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | Supabase publishable key |
+| `NEXT_PUBLIC_SITE_URL` | Application base URL, if used |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Never commit `.env.local` or expose Supabase service-role or secret keys in frontend code.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+### Frontend — Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The Next.js frontend is deployed on Vercel and accessible through the live demo link above.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Backend & Database — Supabase
+
+Supabase hosts the backend services and PostgreSQL database used by the application. The frontend connects to Supabase through its configured environment variables.
+
+## Security
+
+- Keep private credentials out of source control.
+- Configure appropriate Row Level Security (RLS) policies.
+- Protect patient and medical records through proper access controls.
+- Keep privileged service-role credentials server-side.
+
+## Author
+
+**Ishrat Talib**
