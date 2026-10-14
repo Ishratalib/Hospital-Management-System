@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts",
+    "src/components/ui/table.tsx",
+    "src/app/(patient)/patient/page.tsx",
+    "src/app/test-pagination/page.jsx",
+    "src/hooks/usePagination.js",
+    "src/components/ui/table.jsx",
+    "src/features/doctors/queries.ts",
+    "src/app/(admin)/admin/appointments/page.jsx",
+    "src/features/doctors/queries.ts"
+, "src/components/ui/AppointmentStatistics.tsx"  ],
+  "exclude": ["node_modules"]
+}
