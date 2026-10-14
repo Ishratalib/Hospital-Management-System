@@ -15,23 +15,20 @@ A full-stack Hospital Management System designed to simplify hospital operations
 - Next.js
 - React
 - TypeScript
-- Tailwind CSS (if used in the project)
+- Tailwind CSS
 
 ### Backend & Database
 
 - Supabase
 - PostgreSQL
-- Supabase Authentication (if enabled)
+- Supabase Authentication
 - Row Level Security (RLS)
 
 ## Features
 
 - User authentication and login
+- Role-based access control
 - Three user profiles: Admin, Doctor, and Patient
-- Role-based access control for each user profile
-- **Admin:** Manages hospital operations and oversees system activities.
-- **Doctor:** Accesses doctor-related features and manages assigned responsibilities.
-- **Patient:** Accesses patient-related features and views relevant information.
 - Hospital dashboard management
 - Patient information management
 - Doctor management
@@ -40,12 +37,36 @@ A full-stack Hospital Management System designed to simplify hospital operations
 - Supabase database integration
 - Responsive user interface
 
+## User Profiles
+
+The Hospital Management System includes three user profiles with role-based access.
+
+### Admin
+
+- Accesses administrative features.
+- Manages hospital operations and relevant system activities.
+
+### Doctor
+
+- Accesses doctor-related features.
+- Manages assigned responsibilities and relevant patient information.
+
+### Patient
+
+- Accesses patient-related features.
+- Views relevant personal and healthcare information.
+
 ## Project Architecture
 
 - **Frontend:** Next.js, deployed on Vercel.
 - **Backend:** Supabase backend services.
 - **Database:** PostgreSQL hosted on Supabase.
-- **Authentication:** Supabase Authentication, if configured.
+- **Authentication:** Supabase Authentication.
+- **Security:** Row Level Security (RLS), where configured.
+
+## Project Structure
+
+For the complete folder and file structure, see [PROJECT_STRUCTURE.txt](https://github.com/Ishratalib/Hospital-Management-System/blob/main/PROJECT_STRUCTURE.txt).
 
 ## Testing Credentials
 
@@ -68,38 +89,38 @@ Use the following accounts to explore the application.
 
 ## Getting Started
 
+Follow these steps to run the project locally.
+
 ### Prerequisites
 
 - Node.js
 - npm
 - Git
-- A Supabase project
+- A Supabase project with the required database configuration
 
 ### Installation
 
-#### 1. Clone the Repository
-
-Replace the placeholder with your actual frontend repository URL.
+**1. Clone the repository**
 
 ```bash
-git clone <your-frontend-repository-url>
+git clone https://github.com/Ishratalib/Hospital-Management-System.git
 ```
 
-#### 2. Navigate to the Project Directory
+**2. Navigate to the project directory**
 
 ```bash
 cd Hospital-Management-System
 ```
 
-#### 3. Install Dependencies
+**3. Install dependencies**
 
 ```bash
 npm install
 ```
 
-#### 4. Configure Environment Variables
+**4. Configure environment variables**
 
-Create a `.env.local` file in the project root:
+Create a `.env.local` file in the project root and add the following variables:
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
@@ -107,19 +128,17 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
-#### 5. Start the Development Server
+Replace the placeholder values with your own Supabase project URL and publishable key.
+
+**5. Start the development server**
 
 ```bash
 npm run dev
 ```
 
-#### 6. Open the Application
+**6. Open the application**
 
-Visit:
-
-```text
-http://localhost:3000
-```
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Environment Variables
 
@@ -127,26 +146,23 @@ http://localhost:3000
 |---|---|
 | `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL |
 | `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | Supabase publishable key |
-| `NEXT_PUBLIC_SITE_URL` | Application base URL, if used |
+| `NEXT_PUBLIC_SITE_URL` | Application URL |
 
-Never commit `.env.local` or expose Supabase service-role or secret keys in frontend code.
+Never commit your actual `.env.local` file or expose secret keys in a public repository.
 
 ## Deployment
 
-### Frontend — Vercel
+- **Frontend:** Deployed on Vercel.
+- **Backend & Database:** Hosted on Supabase.
 
-The Next.js frontend is deployed on Vercel and accessible through the live demo link above.
-
-### Backend & Database — Supabase
-
-Supabase hosts the backend services and PostgreSQL database used by the application. The frontend connects to Supabase through its configured environment variables.
+Configure the required environment variables in the Vercel project settings before deploying.
 
 ## Security
 
-- Keep private credentials out of source control.
-- Configure appropriate Row Level Security (RLS) policies.
-- Protect patient and medical records through proper access controls.
-- Keep privileged service-role credentials server-side.
+- Use Row Level Security (RLS) policies to protect database records.
+- Apply role-based access controls for Admin, Doctor, and Patient profiles.
+- Keep service-role keys and other sensitive credentials server-side.
+- Never commit secrets or private environment variables to GitHub.
 
 ## Author
 
