@@ -1,0 +1,231 @@
+﻿+-- public
+|   +-- Images
+|   |   +-- n.png
+|   |   +-- SafeHeal.png
+|   |   +-- Vector 7.png
+|   |   \-- Vector 8.png
+|   +-- default-doctor.png
+|   +-- file.svg
+|   +-- girl.png
+|   +-- globe.svg
+|   +-- next.svg
+|   +-- vercel.svg
+|   \-- window.svg
++-- src
+|   +-- app
+|   |   +-- (admin)
+|   |   |   +-- admin
+|   |   |   |   +-- activity-log
+|   |   |   |   |   \-- page.jsx
+|   |   |   |   +-- appointments
+|   |   |   |   |   \-- page.tsx
+|   |   |   |   +-- billing
+|   |   |   |   |   +-- [id]
+|   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   +-- new
+|   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   +-- payments
+|   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   +-- transactions
+|   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   \-- page.tsx
+|   |   |   |   +-- doctors
+|   |   |   |   |   +-- [id]
+|   |   |   |   |   |   +-- edit
+|   |   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   +-- add
+|   |   |   |   |   |   \-- page.jsx
+|   |   |   |   |   +-- schedule
+|   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   \-- page.tsx
+|   |   |   |   +-- patients
+|   |   |   |   |   +-- [id]
+|   |   |   |   |   |   +-- edit
+|   |   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   +-- grid-view
+|   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   +-- NewPatient
+|   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   \-- page.tsx
+|   |   |   |   \-- page.tsx
+|   |   |   \-- layout.tsx
+|   |   +-- (auth)
+|   |   |   +-- login
+|   |   |   |   \-- page.tsx
+|   |   |   +-- register
+|   |   |   |   \-- page.tsx
+|   |   |   \-- layout.tsx
+|   |   +-- (doctor)
+|   |   |   +-- doctor
+|   |   |   |   +-- appointments
+|   |   |   |   |   \-- page.tsx
+|   |   |   |   +-- consultation
+|   |   |   |   |   \-- [appointmentId]
+|   |   |   |   |       \-- page.tsx
+|   |   |   |   +-- patients
+|   |   |   |   |   \-- page.tsx
+|   |   |   |   +-- prescriptions
+|   |   |   |   |   \-- page.tsx
+|   |   |   |   \-- page.tsx
+|   |   |   \-- layout.tsx
+|   |   +-- (patient)
+|   |   |   +-- patient
+|   |   |   |   +-- appointments
+|   |   |   |   |   +-- book
+|   |   |   |   |   |   \-- page.tsx
+|   |   |   |   |   \-- page.tsx
+|   |   |   |   +-- billing
+|   |   |   |   |   \-- page.tsx
+|   |   |   |   \-- page.tsx
+|   |   |   \-- layout.tsx
+|   |   +-- api
+|   |   |   \-- activity-log
+|   |   |       \-- route.js
+|   |   +-- settings
+|   |   |   +-- profile
+|   |   |   |   \-- page.tsx
+|   |   |   \-- layout.tsx
+|   |   +-- test-pagination
+|   |   |   +-- page.jsx
+|   |   |   \-- PaginationDemo.jsx
+|   |   +-- test-real-pagination
+|   |   |   \-- page.jsx
+|   |   +-- unauthorized
+|   |   |   \-- page.tsx
+|   |   +-- favicon.ico
+|   |   +-- globals.css
+|   |   +-- layout.tsx
+|   |   \-- page.tsx
+|   +-- assets
+|   |   +-- images
+|   |   |   +-- user-1.jpg
+|   |   |   +-- user-2.jpg
+|   |   |   \-- user-3.webp
+|   |   \-- index.js
+|   +-- components
+|   |   +-- layout
+|   |   |   +-- navbar.tsx
+|   |   |   +-- nav-links.ts
+|   |   |   +-- profile-menu.tsx
+|   |   |   +-- sidebar.tsx
+|   |   |   +-- ThemeToggle.jsx
+|   |   |   \-- types.ts
+|   |   +-- providers
+|   |   |   \-- toast-provider.tsx
+|   |   +-- settings
+|   |   |   +-- ProfileForm.tsx
+|   |   |   \-- SettingsPanel.tsx
+|   |   +-- ui
+|   |   |   +-- activity-log-item.jsx
+|   |   |   +-- badge.jsx
+|   |   |   +-- button.tsx
+|   |   |   +-- card.tsx
+|   |   |   +-- CustomSelect.tsx
+|   |   |   +-- DashboardStatCard.jsx
+|   |   |   +-- input.tsx
+|   |   |   +-- pagination.tsx
+|   |   |   +-- PaginationControls.jsx
+|   |   |   +-- PaginationControlsWrapper.jsx
+|   |   |   +-- PaginationSearchBar.jsx
+|   |   |   +-- SearchBar.jsx
+|   |   |   +-- select.jsx
+|   |   |   \-- table.tsx
+|   |   \-- ToastProvider.tsx
+|   +-- config
+|   |   \-- route.ts
+|   +-- features
+|   |   +-- admin
+|   |   |   +-- actions.ts
+|   |   |   +-- queries.ts
+|   |   |   +-- schema.ts
+|   |   |   \-- types.ts
+|   |   +-- auth
+|   |   |   +-- components
+|   |   |   |   +-- login-form.tsx
+|   |   |   |   \-- register-form.tsx
+|   |   |   +-- actions.ts
+|   |   |   \-- schema.ts
+|   |   +-- billing
+|   |   |   +-- component
+|   |   |   |   +-- billing-table.tsx
+|   |   |   |   +-- invoice-detail.tsx
+|   |   |   |   +-- invoice-items-table.tsx
+|   |   |   |   +-- invoice-summary.tsx
+|   |   |   |   +-- new-invoice-form.tsx
+|   |   |   |   \-- payments-table.tsx
+|   |   |   +-- actions.ts
+|   |   |   +-- queries.ts
+|   |   |   +-- schema.ts
+|   |   |   \-- types.ts
+|   |   +-- doctors
+|   |   |   +-- components
+|   |   |   |   +-- address-info.tsx
+|   |   |   |   +-- appointment-schedule.tsx
+|   |   |   |   +-- contact-info.tsx
+|   |   |   |   +-- doctor-about.tsx
+|   |   |   |   +-- doctor-appointment-status-chart.tsx
+|   |   |   |   +-- doctor-appointment-table.tsx
+|   |   |   |   +-- doctor-availability.tsx
+|   |   |   |   +-- doctor-card.tsx
+|   |   |   |   +-- doctor-detail-header.tsx
+|   |   |   |   +-- doctor-form.tsx
+|   |   |   |   +-- doctor-grid.tsx
+|   |   |   |   +-- doctor-monthly-appointments-chart.tsx
+|   |   |   |   +-- doctor-patient-table.tsx
+|   |   |   |   +-- doctor-recent-appointments.tsx
+|   |   |   |   +-- doctor-schedule.tsx
+|   |   |   |   +-- doctor-schedule-table.tsx
+|   |   |   |   +-- doctor-top-patients.tsx
+|   |   |   |   +-- doctor-upcoming-appointments.tsx
+|   |   |   |   \-- profile-upload.tsx
+|   |   |   +-- actions.ts
+|   |   |   +-- dashboard-types.ts
+|   |   |   +-- queries.ts
+|   |   |   +-- schema.ts
+|   |   |   \-- types.ts
+|   |   +-- patients
+|   |   |   +-- components
+|   |   |   |   +-- FormInput.tsx
+|   |   |   |   +-- FormSelect.tsx
+|   |   |   |   +-- ImageUpload.tsx
+|   |   |   |   +-- PatientActions.tsx
+|   |   |   |   +-- PatientCard.tsx
+|   |   |   |   +-- PatientDetail.tsx
+|   |   |   |   +-- PatientForm.tsx
+|   |   |   |   +-- PatientsList.tsx
+|   |   |   |   \-- Search.tsx
+|   |   |   +-- actions.ts
+|   |   |   +-- patient-columns.tsx
+|   |   |   +-- schema.ts
+|   |   |   \-- types.ts
+|   |   \-- prescriptions
+|   |       \-- components
+|   |           \-- prescription-table.tsx
+|   +-- hooks
+|   |   +-- usePagination.js
+|   |   \-- use-pagination.ts
+|   +-- lib
+|   |   +-- supabase
+|   |   |   +-- admin.ts
+|   |   |   +-- client.ts
+|   |   |   +-- proxy.ts
+|   |   |   \-- server.ts
+|   |   +-- paginateQuery.js
+|   |   +-- phone.ts
+|   |   \-- utils.ts
+|   \-- proxy.ts
++-- .env
++-- .env.local
++-- .gitignore
++-- AGENTS.md
++-- CLAUDE.md
++-- eslint.config.mjs
++-- next.config.ts
++-- next-env.d.ts
++-- package.json
++-- package-lock.json
++-- postcss.config.mjs
++-- README.md
+\-- tsconfig.json
